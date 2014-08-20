@@ -10,6 +10,11 @@ Siz.reverseWords = function(text) {
   return toReverse.reverseWords();
 }
 
+Siz.reverseLines = function(text, cpl) {
+  var toReverse = new Siz._Page(text, cpl);
+  return toReverse.reverseLines();
+}
+
 Siz.shuffleWords = function(text, shuffler) {
   var toShuffle = new Siz._Page(text);
   return toShuffle.shuffleWords(shuffler);
@@ -84,6 +89,12 @@ Siz._Page.prototype.reverseWords = function() {
   var reversed = this.getWords().reverse();
 
   return reversed.join(' ');
+}
+
+Siz._Page.prototype.reverseLines = function() {
+  var reversed = this.groupWordsByCharLimit().reverse();
+
+  return reversed.join('').trim();
 }
 
 Siz._Page.prototype.halve = function(halver, splitText) {
