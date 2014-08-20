@@ -45,9 +45,11 @@ suite('Reverse', function() {
   });
 
   test('#reverseLines', function() {
-    var expected = ''
+    var expected = 'of the bones stretched beneath the turf...              people, and finding it natural at the end of a walk to think prefer them to be tombs, desiring melancholy like most English are, they say, either tombs or camps. Of the two I should smooth tumulus like those barrows on the South Downs which at a certain point, mount and descend a small tumuls, a that if I ran my finger down that strip of the wall it would, be sure, but it seems to cast a perceptible shadow, suggesting project from the wall. Nor is it entirely circular. I cannot In certain lights that mark on the wall seems actually to';
 
     var cutUp = Siz.reverseLines(Siz._test.toCutUp, 55);
+
+    assert.equal(cutUp, expected);
   });
 });
 
