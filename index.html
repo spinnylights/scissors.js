@@ -1,0 +1,22 @@
+<!doctype html5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scissors.js: A cut-up machine</title>
+  </head>
+  <body>
+    <h1>Scissors.js</h1>
+    <textarea id="to-cut-up" rows="30" cols="100">Write or paste text to be cut up here </textarea>
+    <button type="button" id="run-cut-up">&#x2702;</button>
+    <textarea id="cut-up-text" rows="30" cols="100">
+    </textarea>
+    <form id="cut-up-methods">
+      <input type="checkbox" id="rev-words">Reverse words</input>
+      <input type="checkbox" id="shuf-words">Shuffle words</input>
+      <input type="checkbox" id="rev-lines">Reverse lines</input>
+      <input type="checkbox" id="shuf-lines">Shuffle lines</input>
+      <input type="checkbox" id="bur-spl">Burroughs-Gysin (ignore word breaks)</input>
+      <input type="checkbox" id="bur-wrd">Burroughs-Gysin (preserve word breaks)</input>
+    </form>
+  </body>
+</html>
